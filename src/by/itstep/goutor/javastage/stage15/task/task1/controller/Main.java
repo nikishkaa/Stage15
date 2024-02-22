@@ -14,11 +14,13 @@ public class Main {
 
         int sum = MatrixLogic.getSumMainDiagonal(matrix);
 
+        int sumSide = MatrixLogic.getSumSideDiagonal(matrix);
+
         StringBuilder startMatrixUI = Converter.convertMatrix(matrix);
 
 
         Printer.print(startMatrixUI);
-        Printer.print(MatrixUI.getMatrixUI(sum));
+        Printer.print(MatrixUI.getMatrixUI(sum, sumSide));
 
     }
 }

@@ -16,4 +16,25 @@ public class MatrixLogic {
 
         return sum;
     }
+
+
+    public static int getSumSideDiagonal(int[][] matrix) {
+
+        if (matrix == null || matrix.length == 0) {
+            return -1;
+        }
+
+        int sumSide = 0;
+int a = 0;
+
+        for (int i = 1; i <= matrix.length; i++) {
+            sumSide += matrix[a++][matrix.length - i];
+        }
+
+
+        return sumSide;
+
+
+    }
+
 }
