@@ -7,11 +7,12 @@ public class MatrixUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getMatrixUI(int sum, int sumSide, int upDiagonalSum) {
+    public static StringBuilder getMatrixUI(int sum, int sumSide, int upDiagonalSum, int downDiagonalSum) {
 
         BUILDER.append("Sum element in main diagonal: ").append(sum)
                 .append("\nSum side diagonal: ").append(sumSide)
-                .append("\nSum up main diagonal element: ").append(upDiagonalSum);
+                .append("\nSum up main diagonal element: ").append(upDiagonalSum)
+                .append("\nSum down main diagonal element: ").append(downDiagonalSum);
 
         return BUILDER;
     }

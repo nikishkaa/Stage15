@@ -17,11 +17,13 @@ public class Main {
 
         int upDiagonalSum = MatrixLogic.getSumUpDiagonal(matrix);
 
+        int downDiagonalSum = MatrixLogic.getSumDownDiagonal(matrix);
+
         StringBuilder startMatrixUI = Converter.convertMatrix(matrix);
 
 
         Printer.print(startMatrixUI);
-        Printer.print(MatrixUI.getMatrixUI(sum, sumSide, upDiagonalSum));
+        Printer.print(MatrixUI.getMatrixUI(sum, sumSide, upDiagonalSum, downDiagonalSum));
 
     }
 }

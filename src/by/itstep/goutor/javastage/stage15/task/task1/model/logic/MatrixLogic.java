@@ -52,4 +52,19 @@ public class MatrixLogic {
         return upDiagonalSum;
     }
 
+
+    public static int getSumDownDiagonal(int[][] matrix) {
+
+        int downDiagonalSum = 0;
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = i - 1; j >= 0; j--) {
+                downDiagonalSum += matrix[i][j];
+            }
+        }
+
+
+        return downDiagonalSum;
+    }
+
 }
