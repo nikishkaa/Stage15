@@ -25,10 +25,10 @@ public class MatrixLogic {
         }
 
         int sumSide = 0;
-int a = 0;
 
-        for (int i = 1; i <= matrix.length; i++) {
-            sumSide += matrix[a++][matrix.length - i];
+
+        for (int i = 1, line = 0; i <= matrix.length; i++) {
+            sumSide += matrix[line++][matrix.length - i];
         }
 
 
