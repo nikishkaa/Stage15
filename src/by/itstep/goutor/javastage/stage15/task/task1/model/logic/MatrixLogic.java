@@ -37,4 +37,19 @@ public class MatrixLogic {
 
     }
 
+
+    public static int getSumUpDiagonal(int[][] matrix) {
+
+        int upDiagonalSum = 0;
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = i + 1; j < matrix[i].length; j++) {
+                upDiagonalSum += matrix[i][j];
+            }
+        }
+
+
+        return upDiagonalSum;
+    }
+
 }

@@ -5,7 +5,6 @@ import by.itstep.goutor.javastage.stage15.task.task1.util.Converter;
 import by.itstep.goutor.javastage.stage15.task.task1.util.MatrixInit;
 import by.itstep.goutor.javastage.stage15.task.task1.util.MatrixUI;
 import by.itstep.goutor.javastage.stage15.util.view.Printer;
-import by.itstep.goutor.javastage.stage15.util.view.StringPrinter;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,11 +15,13 @@ public class Main {
 
         int sumSide = MatrixLogic.getSumSideDiagonal(matrix);
 
+        int upDiagonalSum = MatrixLogic.getSumUpDiagonal(matrix);
+
         StringBuilder startMatrixUI = Converter.convertMatrix(matrix);
 
 
         Printer.print(startMatrixUI);
-        Printer.print(MatrixUI.getMatrixUI(sum, sumSide));
+        Printer.print(MatrixUI.getMatrixUI(sum, sumSide, upDiagonalSum));
 
     }
 }
