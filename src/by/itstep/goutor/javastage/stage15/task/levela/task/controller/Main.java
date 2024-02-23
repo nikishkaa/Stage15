@@ -14,10 +14,12 @@ public class Main {
 
         int maxUpElement = MatrixLogic.getMaxUoElement(matrix);
 
+        int maxDownElement = MatrixLogic.getMaxDownElement(matrix);
+
         StringBuilder startMatrix = MatrixConverter.matrixToStr(matrix);
 
 
         Printer.print(startMatrix);
-        Printer.print(MatrixUI.getLevelAUI(maxUpElement));
+        Printer.print(MatrixUI.getLevelAUI(maxUpElement, maxDownElement));
     }
 }
