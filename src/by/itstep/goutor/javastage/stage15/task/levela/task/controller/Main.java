@@ -16,10 +16,12 @@ public class Main {
 
         int maxDownElement = MatrixLogic.getMaxDownElement(matrix);
 
+        int maxSideElement = MatrixLogic.getBiggestElementUpSideDiagonal(matrix);
+
         StringBuilder startMatrix = MatrixConverter.matrixToStr(matrix);
 
 
         Printer.print(startMatrix);
-        Printer.print(MatrixUI.getLevelAUI(maxUpElement, maxDownElement));
+        Printer.print(MatrixUI.getLevelAUI(maxUpElement, maxDownElement, maxSideElement));
     }
 }

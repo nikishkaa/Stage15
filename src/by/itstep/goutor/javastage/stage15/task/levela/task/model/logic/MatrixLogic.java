@@ -44,4 +44,24 @@ public class MatrixLogic {
 
         return maxDownElement;
     }
+
+
+    public static int getBiggestElementUpSideDiagonal(int[][] matrix) {
+
+        if (matrix == null || matrix.length == 0) {
+            return Integer.MIN_VALUE;
+        }
+
+        int maxSideElement = Integer.MIN_VALUE;
+
+        for (int i = 1, line = 0; i <= matrix.length; i++) {
+            for (int j = i + 1; j < matrix.length; j++) {
+                if (matrix[line++][matrix.length - i] > maxSideElement) {
+                    maxSideElement = matrix[line++][matrix.length - i];
+                }
+            }
+        }
+
+        return maxSideElement;
+    }
 }
