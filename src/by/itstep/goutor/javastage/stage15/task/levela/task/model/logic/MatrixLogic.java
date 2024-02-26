@@ -60,7 +60,6 @@ public class MatrixLogic {
                     maxSideElement = matrix[line++][matrix.length - i];
                 }
             }
-
         }
 
         return maxSideElement;
