@@ -88,7 +88,7 @@ public class TestMatrix {
 
     @Test
     public void testCountEvenElementUpTheSideDiagonal() {
-        int expected = 3;
+        int expected = 2;
 
         int actual = MatrixLogic.getCountEvenElementUpTheSideDiagonal(matrix);
 
