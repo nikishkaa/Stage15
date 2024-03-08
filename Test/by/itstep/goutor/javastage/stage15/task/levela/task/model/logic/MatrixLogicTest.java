@@ -89,4 +89,25 @@ public class MatrixLogicTest {
         assertEquals(expected, actual);
     }
 
+
+    @Test
+    public void testMaxUoElement() {
+        int expected = 6;
+
+        int actual = MatrixLogic.getMaxUoElement(matrix);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testMaxDownElement(){
+        int expected = 8;
+
+        int actual = MatrixLogic.getMaxDownElement(matrix);
+
+        assertEquals(expected,actual);
+    }
+
+
+
 }
