@@ -85,4 +85,34 @@ public class TestMatrix {
         assertEquals(expected, actual);
     }
 
+
+    @Test
+    public void testCountEvenElementUpTheSideDiagonal() {
+        int expected = 2;
+
+        int actual = MatrixLogic.getCountEvenElementUpTheSideDiagonal(matrix);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testCountEvenElementUpTheSideDiagonalByNullMatrix() {
+        int[][] NullMatrix = null;
+        int expected = -1;
+
+        int actual = MatrixLogic.getCountEvenElementUpTheSideDiagonal(NullMatrix);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testCountEvenElementUpTheSideDiagonalByNullMatrixLength() {
+        int[][] NullMatrix = new int[0][0];
+
+        int expected = -1;
+
+        int actual = MatrixLogic.getCountEvenElementUpTheSideDiagonal(NullMatrix);
+
+        assertEquals(expected, actual);
+    }
 }

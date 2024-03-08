@@ -42,4 +42,14 @@ public class MatrixLogic {
     }
 
 
+    public static int getCountEvenElementUpTheSideDiagonal(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return -1;
+        }
+
+        int countEvenUpSideElement = 0;
+
+    return countEvenUpSideElement;
+    }
+
 }
