@@ -14,11 +14,12 @@ public class Main {
         int countEvenUpMain = MatrixLogic.getCountEvenElementUpTheMainDiagonal(matrix);
         int countEvenDownMain = MatrixLogic.getCountEvenElementDownTheMainDiagonal(matrix);
         int countEvenUpSideElement = MatrixLogic.getCountEvenElementUpTheSideDiagonal(matrix);
+        int countEvenDownSideElement = MatrixLogic.getCountEvenElementDownTheSideDiagonal(matrix);
 
         StringBuilder startMatrix = MatrixConverter.matrixToStr(matrix);
 
 
         Printer.print(startMatrix);
-        Printer.print(MatrixUI.getMatrixUI(countEvenUpMain, countEvenDownMain, countEvenUpSideElement));
+        Printer.print(MatrixUI.getMatrixUI(countEvenUpMain, countEvenDownMain, countEvenUpSideElement,countEvenDownSideElement));
     }
 }

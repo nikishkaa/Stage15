@@ -7,7 +7,10 @@ public class MatrixUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getMatrixUI(int countEvenUpMain, int countEvenDownMain, int countEvenUpSideElement) {
+    public static StringBuilder getMatrixUI(int countEvenUpMain,
+                                            int countEvenDownMain,
+                                            int countEvenUpSideElement,
+                                            int countEvenDownSideElement) {
 
 
         return BUILDER.append("Count even element up the main diagonal ")
@@ -15,6 +18,8 @@ public class MatrixUI {
                 .append("\nCount even element up the main diagonal ")
                 .append(countEvenDownMain)
                 .append("\nCount even element up the side diagonal ")
-                .append(countEvenUpSideElement);
+                .append(countEvenUpSideElement)
+                .append("\nCount even element down the side diagonal ")
+                .append(countEvenDownSideElement);
     }
 }

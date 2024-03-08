@@ -61,4 +61,23 @@ public class MatrixLogic {
         return countEvenUpSideElement;
     }
 
+
+    public static int getCountEvenElementDownTheSideDiagonal(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return -1;
+        }
+
+        int countEvenDownSideElement = 0;
+
+        for (int i = 1; i < matrix.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (matrix[i][j] % 2 == 0) {
+                    countEvenDownSideElement++;
+                }
+            }
+        }
+
+
+        return countEvenDownSideElement;
+    }
 }
