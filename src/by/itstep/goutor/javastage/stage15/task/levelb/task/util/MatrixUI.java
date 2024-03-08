@@ -7,9 +7,10 @@ public class MatrixUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getMatrixUI() {
+    public static StringBuilder getMatrixUI(int countEvenUpMain) {
 
 
-        return BUILDER.append("");
+        return BUILDER.append("Count even element up the main diagonal ")
+                .append(countEvenUpMain);
     }
 }

@@ -6,19 +6,19 @@ public class MatrixLogic {
             return -1;
         }
 
-        int count = 0;
+        int countEvenUpMain = 0;
 
         //O(N^2)
         for (int i = 0; i < matrix.length; i++) {
             for (int j = i + 1; j < matrix.length; j++) {
                 if (matrix[i][j] % 2 == 0) {
-                    count += 1;
+                    countEvenUpMain += 1;
                 }
 
             }
         }
 
 
-        return count;
+        return countEvenUpMain;
     }
 }
