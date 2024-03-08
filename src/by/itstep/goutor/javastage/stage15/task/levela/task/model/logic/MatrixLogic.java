@@ -9,6 +9,7 @@ public class MatrixLogic {
 
         int maxUpElement = Integer.MIN_VALUE;
 
+        //O(N^2)
         for (int i = 0; i < matrix.length; i++) {
             for (int j = i + 1; j < matrix.length; j++) {
 
@@ -32,6 +33,7 @@ public class MatrixLogic {
 
         int maxDownElement = Integer.MIN_VALUE;
 
+        //O(N^2)
         for (int i = 0; i < matrix.length; i++) {
             for (int j = i - 1; j >= 0; j--) {
 
@@ -54,6 +56,7 @@ public class MatrixLogic {
 
         int maxSideElement = Integer.MIN_VALUE;
 
+        //O(N^2)
         for (int i = 1, line = 0; i <= matrix.length; i++) {
             for (int j = i + 1; j < matrix.length; j++) {
                 if (matrix[line++][matrix.length - i] > maxSideElement) {
