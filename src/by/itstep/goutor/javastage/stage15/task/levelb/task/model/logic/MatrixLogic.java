@@ -21,4 +21,25 @@ public class MatrixLogic {
 
         return countEvenUpMain;
     }
+
+    public static int getCountEvenElementDownTheMainDiagonal(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return -1;
+        }
+
+        int countEvenDownMain = 0;
+
+        for (int i = 1; i < matrix.length; i++) {
+            for (int j = i - 1; j >= 0; j++) {
+                if ((matrix[i][j] % 2) == 0) {
+                    countEvenDownMain += 1;
+                }
+            }
+        }
+
+
+        return countEvenDownMain;
+    }
+
+
 }
