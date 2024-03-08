@@ -11,7 +11,7 @@ public class MatrixUI {
 
         BUILDER.append("Max element up the main diagonal: ").append(maxUpElement)
                 .append("\nMax element dawn the main diagonal: ").append(maxDownElement)
-                .append("\nMax element up the side diagonal: ").append(maxDownElement);
+                .append("\nMax element up the side diagonal: ").append(maxSideElement);
 
 
         return BUILDER;
