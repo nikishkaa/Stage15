@@ -25,7 +25,7 @@ public class MatrixLogicTest {
     }
 
     @Test
-    public void testNullMatrix() {
+    public void testNullMatrixForNull() {
         matrix = null;
 
         int expected = Integer.MIN_VALUE;
@@ -33,4 +33,60 @@ public class MatrixLogicTest {
         int actual = MatrixLogic.getMaxUoElement(matrix);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testMaxDownElementForNull() {
+        matrix = null;
+
+        int expected = Integer.MIN_VALUE;
+
+        int actual = MatrixLogic.getMaxDownElement(matrix);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testBiggestElementUpSideDiagonalForNull() {
+        matrix = null;
+
+        int expected = Integer.MIN_VALUE;
+
+        int actual = MatrixLogic.getMaxDownElement(matrix);
+
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void testNullMatrixForNullLength() {
+        int[][] nullLengthMatrix = new int[0][0];
+
+        int expected = Integer.MIN_VALUE;
+
+        int actual = MatrixLogic.getMaxUoElement(nullLengthMatrix);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testMaxDownElementForNullLength() {
+        int[][] nullLengthMatrix = new int[0][0];
+
+        int expected = Integer.MIN_VALUE;
+
+        int actual = MatrixLogic.getMaxDownElement(nullLengthMatrix);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testBiggestElementUpSideDiagonalForNullLength() {
+        int[][] nullLengthMatrix = new int[0][0];
+
+        int expected = Integer.MIN_VALUE;
+
+        int actual = MatrixLogic.getMaxDownElement(nullLengthMatrix);
+
+        assertEquals(expected, actual);
+    }
+
 }
