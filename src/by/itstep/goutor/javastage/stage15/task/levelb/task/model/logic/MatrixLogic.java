@@ -29,8 +29,8 @@ public class MatrixLogic {
 
         int countEvenDownMain = 0;
 
-        for (int i = 1; i < matrix.length; i++) {
-            for (int j = i - 1; j >= 0; j++) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = i - 1; j >=0; j--) {
                 if ((matrix[i][j] % 2) == 0) {
                     countEvenDownMain += 1;
                 }
