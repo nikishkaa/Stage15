@@ -12,7 +12,7 @@ public class MatrixLogic {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = i + 1; j < matrix.length; j++) {
                 if (matrix[i][j] % 2 == 0) {
-                    countEvenUpMain += 1;
+                    countEvenUpMain++;
                 }
 
             }
@@ -30,9 +30,9 @@ public class MatrixLogic {
         int countEvenDownMain = 0;
 
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = i - 1; j >=0; j--) {
+            for (int j = i - 1; j >= 0; j--) {
                 if ((matrix[i][j] % 2) == 0) {
-                    countEvenDownMain += 1;
+                    countEvenDownMain++;
                 }
             }
         }
@@ -49,7 +49,16 @@ public class MatrixLogic {
 
         int countEvenUpSideElement = 0;
 
-    return countEvenUpSideElement;
+        for (int i = 0, line = 0; i < matrix.length; i++) {
+            for (int j = i + 1; j < matrix.length; j++) {
+                if (matrix[line++][j] % 2 == 0) {
+                    countEvenUpSideElement++;
+                }
+            }
+        }
+
+
+        return countEvenUpSideElement;
     }
 
 }
