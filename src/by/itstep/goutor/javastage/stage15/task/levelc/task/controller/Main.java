@@ -17,6 +17,7 @@ public class Main {
         StringBuilder startMatrix = MatrixConverter.matrixToStr(matrix);
 
         Printer.print(startMatrix);
-        Printer.print(MatrixUI.getMatrixUI(countEvElementDownMainD, countEvElementUpMainD, countPosElUpSidD));
+        Printer.print(MatrixUI.getMatrixUI(countEvElementDownMainD,
+                countEvElementUpMainD, countPosElUpSidD));
     }
 }
