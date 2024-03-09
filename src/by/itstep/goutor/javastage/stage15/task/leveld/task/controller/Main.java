@@ -11,10 +11,11 @@ public class Main {
         int[][] matrix = MatrixInit.initMatrix();
 
         boolean zeroElUpMainD = MatrixLogic.getZeroElementUpTheMainDiagonal(matrix);
+        boolean zeroElDownMainD = MatrixLogic.getZeroElementDownTheMainDiagonal(matrix);
 
         StringBuilder startMatrix = MatrixConverter.matrixToStr(matrix);
 
         Printer.print(startMatrix);
-        Printer.print(MatrixUI.getMatrixUI(zeroElUpMainD));
+        Printer.print(MatrixUI.getMatrixUI(zeroElUpMainD, zeroElDownMainD));
     }
 }

@@ -20,4 +20,23 @@ public class MatrixLogic {
 
         return zeroElUpMainD;
     }
+
+    public static boolean getZeroElementDownTheMainDiagonal(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return false;
+        }
+
+        boolean zeroElDownMainD = false;
+
+        for (int i = 1; i < matrix.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (matrix[i][j] == 0) {
+                    zeroElDownMainD = true;
+                    break;
+                }
+            }
+        }
+
+        return zeroElDownMainD;
+    }
 }

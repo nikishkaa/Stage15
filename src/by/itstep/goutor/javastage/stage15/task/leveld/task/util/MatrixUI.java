@@ -7,10 +7,16 @@ public class MatrixUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getMatrixUI(boolean zeroElUpMainD) {
+    public static final String POSIT_RES = "YES";
+    public static final String NEGATIVE_RES = "NO";
 
-        return BUILDER.append("in yor matrix ").
-                append(zeroElUpMainD ? "YES" : "NO")
-                .append(" element up main diagonal.");
+    public static StringBuilder getMatrixUI(boolean zeroElUpMainD,
+                                            boolean zeroElDownMainD) {
+
+        return BUILDER.append("in yor matrix: ").
+                append(zeroElUpMainD ? POSIT_RES : NEGATIVE_RES)
+                .append(" element up main diagonal, ")
+                .append("\n").append(zeroElDownMainD ? POSIT_RES : NEGATIVE_RES)
+                .append(" element down main diagonal, ");
     }
 }
