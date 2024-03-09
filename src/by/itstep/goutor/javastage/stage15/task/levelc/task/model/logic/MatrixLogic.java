@@ -8,6 +8,7 @@ public class MatrixLogic {
 
         int countEvElementDownMainD = 0;
 
+        //O(N^2)
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (matrix[i][j] > 0) {
@@ -27,6 +28,7 @@ public class MatrixLogic {
 
         int countEvElementUpMainD = 0;
 
+        //O(N^2)
         for (int i = 0; i < matrix.length; i++) {
             for (int j = matrix.length - 1; j > i; j--) {
                 if (matrix[i][j] > 0) {
@@ -35,5 +37,25 @@ public class MatrixLogic {
             }
         }
         return countEvElementUpMainD;
+    }
+
+
+    public static int getCountPositElementUpTheSideDiagonal(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return -1;
+        }
+
+        int countPosElUpSidD = 0;
+
+        //O(N^2)
+        for (int i = matrix.length - 2; i > 0; i--) {
+            for (int j = i - 1; j < i; j++) {
+                System.out.println(matrix[i][j]);
+                if (matrix[i][j] > 0) {
+                    countPosElUpSidD++;
+                }
+            }
+        }
+        return countPosElUpSidD;
     }
 }

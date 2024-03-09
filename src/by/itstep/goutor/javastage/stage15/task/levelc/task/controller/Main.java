@@ -12,10 +12,11 @@ public class Main {
 
         int countEvElementDownMainD = MatrixLogic.getCountEvenElementDownTheMainDiagonal(matrix);
         int countEvElementUpMainD = MatrixLogic.getCountEvenElementUpTheMainDiagonal(matrix);
+        int countPosElUpSidD = MatrixLogic.getCountPositElementUpTheSideDiagonal(matrix);
 
         StringBuilder startMatrix = MatrixConverter.matrixToStr(matrix);
 
         Printer.print(startMatrix);
-        Printer.print(MatrixUI.getMatrixUI(countEvElementDownMainD, countEvElementUpMainD));
+        Printer.print(MatrixUI.getMatrixUI(countEvElementDownMainD, countEvElementUpMainD, countPosElUpSidD));
     }
 }

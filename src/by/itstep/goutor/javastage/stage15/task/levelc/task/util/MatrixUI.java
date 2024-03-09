@@ -7,12 +7,15 @@ public class MatrixUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getMatrixUI(int countEvElementDownMainD,int countEvElementUpMainD) {
+    public static StringBuilder getMatrixUI(int countEvElementDownMainD,int
+            countEvElementUpMainD, int countPosElUpSidD) {
 
 
         return BUILDER.append("Count positive element down the main diagonal ")
                 .append(countEvElementDownMainD)
                 .append("\nCount positive element down the main diagonal ")
-                .append(countEvElementUpMainD);
+                .append(countEvElementUpMainD)
+                .append("\nCount positive element down the main diagonal ")
+                .append(countPosElUpSidD);
     }
 }
