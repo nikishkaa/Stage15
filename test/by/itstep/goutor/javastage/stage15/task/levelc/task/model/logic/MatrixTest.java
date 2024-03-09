@@ -26,7 +26,11 @@ public class MatrixTest {
 
     @Test
     public void testCountEvenElementUpTheMainDiagonal() {
+        int expected = 3;
 
+        int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(matrix);
+
+        assertEquals(expected, actual);
     }
 
     @Test
