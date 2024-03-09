@@ -26,32 +26,26 @@ public class MatrixLogicTest {
 
     @Test
     public void testNullMatrixForNull() {
-        matrix = null;
-
         int expected = Integer.MIN_VALUE;
 
-        int actual = MatrixLogic.getMaxUoElement(matrix);
+        int actual = MatrixLogic.getMaxUoElement(null);
         assertEquals(expected, actual);
     }
 
     @Test
     public void testMaxDownElementForNull() {
-        matrix = null;
-
         int expected = Integer.MIN_VALUE;
 
-        int actual = MatrixLogic.getMaxDownElement(matrix);
+        int actual = MatrixLogic.getMaxDownElement(null);
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void testBiggestElementUpSideDiagonalForNull() {
-        matrix = null;
-
         int expected = Integer.MIN_VALUE;
 
-        int actual = MatrixLogic.getMaxDownElement(matrix);
+        int actual = MatrixLogic.getMaxDownElement(null);
 
         assertEquals(expected, actual);
     }

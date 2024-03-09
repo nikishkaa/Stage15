@@ -35,10 +35,9 @@ public class TestMatrix {
 
     @Test
     public void testCountEvenElementUpTheMainDiagonalByNullMatrix() {
-        int[][] NullMatrix = null;
         int expected = -1;
 
-        int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(NullMatrix);
+        int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(null);
 
         assertEquals(expected, actual);
     }
@@ -66,10 +65,9 @@ public class TestMatrix {
 
     @Test
     public void testCountEvenElementDownTheMainDiagonalByNullMatrix() {
-        int[][] NullMatrix = null;
         int expected = -1;
 
-        int actual = MatrixLogic.getCountEvenElementDownTheMainDiagonal(NullMatrix);
+        int actual = MatrixLogic.getCountEvenElementDownTheMainDiagonal(null);
 
         assertEquals(expected, actual);
     }
@@ -97,10 +95,9 @@ public class TestMatrix {
 
     @Test
     public void testCountEvenElementUpTheSideDiagonalByNullMatrix() {
-        int[][] NullMatrix = null;
         int expected = -1;
 
-        int actual = MatrixLogic.getCountEvenElementUpTheSideDiagonal(NullMatrix);
+        int actual = MatrixLogic.getCountEvenElementUpTheSideDiagonal(null);
 
         assertEquals(expected, actual);
     }
@@ -128,10 +125,9 @@ public class TestMatrix {
 
     @Test
     public void testCountEvenElementDownTheSideDiagonalByNullMatrix() {
-        int[][] NullMatrix = null;
         int expected = -1;
 
-        int actual = MatrixLogic.getCountEvenElementDownTheSideDiagonal(NullMatrix);
+        int actual = MatrixLogic.getCountEvenElementDownTheSideDiagonal(null);
 
         assertEquals(expected, actual);
     }

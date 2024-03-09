@@ -34,10 +34,9 @@ public class MatrixTest {
 
     @Test
     public void testZeroElementUpTheMainDiagonalByNull() {
-        int[][] nullMatrix = null;
         boolean expected = false;
 
-        boolean actual = MatrixLogic.getZeroElementUpTheMainDiagonal(nullMatrix);
+        boolean actual = MatrixLogic.getZeroElementUpTheMainDiagonal(null);
 
         assertEquals(expected, actual);
     }
