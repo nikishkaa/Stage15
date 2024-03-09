@@ -25,10 +25,10 @@ public class MatrixTest {
     }
 
     @Test
-    public void testCountEvenElementUpTheMainDiagonal() {
+    public void testCountEvenElementDownTheMainDiagonal() {
         int expected = 3;
 
-        int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(matrix);
+        int actual = MatrixLogic.getCountEvenElementDownTheMainDiagonal(matrix);
 
         assertEquals(expected, actual);
     }

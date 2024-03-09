@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         int[][] matrix = MatrixInit.initMatrix();
 
-        int countEvElementUpMainD = MatrixLogic.getCountEvenElementUpTheMainDiagonal(matrix);
+        int countEvElementUpMainD = MatrixLogic.getCountEvenElementDownTheMainDiagonal(matrix);
 
 
         StringBuilder startMatrix = MatrixConverter.matrixToStr(matrix);
