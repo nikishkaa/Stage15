@@ -12,14 +12,43 @@ public class MatrixTest {
     @Before
     public void init() {
         matrix = new int[][]{
-                {1, 2, 3},
+                {0, 2, 0},
                 {4, 5, 6},
-                {7, 8, 9}
+                {0, 8, 0}
         };
     }
 
     @After
     public void clearing() {
         matrix = null;
+    }
+
+    @Test
+    public void testZeroElementUpTheMainDiagonal() {
+        boolean expected = true;
+
+        boolean actual = MatrixLogic.getZeroElementUpTheMainDiagonal(matrix);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testZeroElementUpTheMainDiagonalByNull() {
+        int[][] nullMatrix = null;
+        boolean expected = false;
+
+        boolean actual = MatrixLogic.getZeroElementUpTheMainDiagonal(nullMatrix);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testZeroElementUpTheMainDiagonalByZeroLength() {
+        int[][] zeroLengthMatrix = new int[0][0];
+        boolean expected = false;
+
+        boolean actual = MatrixLogic.getZeroElementUpTheMainDiagonal(zeroLengthMatrix);
+
+        assertEquals(expected, actual);
     }
 }

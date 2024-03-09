@@ -7,8 +7,10 @@ public class MatrixUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getMatrixUI() {
+    public static StringBuilder getMatrixUI(boolean zeroElUpMainD) {
 
-        return BUILDER;
+        return BUILDER.append("in yor matrix ").
+                append(zeroElUpMainD ? "YES" : "NO")
+                .append(" element up main diagonal.");
     }
 }
