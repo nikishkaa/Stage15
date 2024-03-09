@@ -24,4 +24,29 @@ public class MatrixTest {
         matrix = null;
     }
 
+    @Test
+    public void testCountEvenElementUpTheMainDiagonal() {
+
+    }
+
+    @Test
+    public void testCountEvenElementUpTheMainDiagonalByNullMatrix() {
+        int[][] nullMatrix = null;
+        int expected = -1;
+
+        int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(nullMatrix);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testCountEvenElementUpTheMainDiagonalByNullLength() {
+        int[][] nullLengthMatrix = new int[0][0];
+        int expected = -1;
+
+        int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(nullLengthMatrix);
+
+        assertEquals(expected, actual);
+    }
+
 }
