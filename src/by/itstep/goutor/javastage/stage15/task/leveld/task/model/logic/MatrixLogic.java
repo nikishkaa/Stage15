@@ -8,7 +8,15 @@ public class MatrixLogic {
 
         boolean zeroElUpMainD = false;
 
-
+        //O(N^2)
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = matrix.length - 1; j > i; j--) {
+                if (matrix[i][j] == 0) {
+                    zeroElUpMainD = true;
+                    break;
+                }
+            }
+        }
 
         return zeroElUpMainD;
     }
