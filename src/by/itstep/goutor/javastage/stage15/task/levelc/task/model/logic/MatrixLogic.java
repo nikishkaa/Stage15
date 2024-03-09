@@ -20,10 +20,20 @@ public class MatrixLogic {
     }
 
 
-    public static int getCountEvenElementUpTheMainDiagonal (int[][] matrix) {
+    public static int getCountEvenElementUpTheMainDiagonal(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return -1;
+        }
 
         int countEvElementUpMainD = 0;
 
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = matrix.length - 1; j > i; j--) {
+                if (matrix[i][j] > 0) {
+                    countEvElementUpMainD++;
+                }
+            }
+        }
         return countEvElementUpMainD;
     }
 }
