@@ -6,21 +6,24 @@ public class MatrixLogic {
             return -1;
         }
 
-        int countEvElementUpMainD = 0;
+        int countEvElementDownMainD = 0;
 
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (matrix[i][j] > 0) {
-                    countEvElementUpMainD++;
+                    countEvElementDownMainD++;
                 }
             }
         }
 
-        return countEvElementUpMainD;
+        return countEvElementDownMainD;
     }
 
 
-    public static int main(int[][] matrix) {
-return -1;
+    public static int getCountEvenElementUpTheMainDiagonal (int[][] matrix) {
+
+        int countEvElementUpMainD = 0;
+
+        return countEvElementUpMainD;
     }
 }
