@@ -17,6 +17,7 @@ public class MatrixLogic {
             }
         }
 
+
         return countEvElementDownMainD;
     }
 
