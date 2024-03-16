@@ -6,17 +6,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class MatrixTest {
-
+public class TestNullLengthMatrix {
     public int[][] matrix;
 
     @Before
-    public void init() {
-        matrix = new int[][]{
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        };
+    public void matrixInit() {
+        matrix = new int[0][0];
     }
 
     @After
@@ -24,10 +19,9 @@ public class MatrixTest {
         matrix = null;
     }
 
-
     @Test
-    public void testCountEvenElementDownTheMainDiagonal() {
-        int expected = 3;
+    public void testCountEvenElementUpTheMainDiagonalByNullLength() {
+        int expected = -1;
 
         int actual = MatrixLogic.getCountEvenElementDownTheMainDiagonal(matrix);
 
@@ -35,8 +29,8 @@ public class MatrixTest {
     }
 
     @Test
-    public void testCountEvenElementUpTheMainDiagonal() {
-        int expected = 3;
+    public void testCountEvenElementUpTheMainDiagonalByZeroLength() {
+        int expected = -1;
 
         int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(matrix);
 
@@ -44,12 +38,11 @@ public class MatrixTest {
     }
 
     @Test
-    public void testCountPositElementUpTheSideDiagonal() {
-        int expected = 3;
+    public void testCountPositElementUpTheSideDiagonalByZeroLength() {
+        int expected = -1;
 
         int actual = MatrixLogic.getCountPositElementUpTheSideDiagonal(matrix);
 
         assertEquals(expected, actual);
     }
-
 }

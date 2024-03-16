@@ -9,8 +9,14 @@ import static org.junit.Assert.assertEquals;
 public class TestNullLengthMatrix {
     public int[][] matrix;
 
+    @Before
     public void matrixInit() {
         matrix = new int[0][0];
+    }
+
+    @After
+    public void clearing() {
+        matrix = null;
     }
 
     @Test

@@ -1,4 +1,4 @@
-package by.itstep.goutor.javastage.stage15.task.levelb.task.model.logic;
+package by.itstep.goutor.javastage.stage15.task.levelc.task.model.logic;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -17,35 +17,27 @@ public class TestNullMatrix {
     public void testCountEvenElementUpTheMainDiagonalByNullMatrix() {
         int expected = -1;
 
-        int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(matrix);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void testCountEvenElementDownTheMainDiagonalByNullMatrix() {
-        int expected = -1;
-
         int actual = MatrixLogic.getCountEvenElementDownTheMainDiagonal(matrix);
 
         assertEquals(expected, actual);
     }
 
     @Test
-    public void testCountEvenElementUpTheSideDiagonalByNullMatrix() {
+    public void testCountEvenElementUpTheMainDiagonalByNull() {
         int expected = -1;
 
-        int actual = MatrixLogic.getCountEvenElementUpTheSideDiagonal(matrix);
+        int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(matrix);
 
         assertEquals(expected, actual);
     }
 
     @Test
-    public void testCountEvenElementDownTheSideDiagonalByNullMatrix() {
+    public void testCountPositElementUpTheSideDiagonalByNull() {
         int expected = -1;
 
-        int actual = MatrixLogic.getCountEvenElementDownTheSideDiagonal(matrix);
+        int actual = MatrixLogic.getCountPositElementUpTheSideDiagonal(matrix);
 
         assertEquals(expected, actual);
     }
+
 }
