@@ -6,62 +6,47 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestMatrix {
+public class TestNullMatrix {
     public int[][] matrix;
 
     @Before
-    public void initMatrix() {
-        matrix = new int[][]{
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        };
-    }
-
-    @After
-    public void MatrixClearing() {
+    public void matrixInit() {
         matrix = null;
     }
 
-
     @Test
-    public void testCountEvenElementUpTheMainDiagonal() {
-        int expected = 2;
+    public void testCountEvenElementUpTheMainDiagonalByNullMatrix() {
+        int expected = -1;
 
         int actual = MatrixLogic.getCountEvenElementUpTheMainDiagonal(matrix);
 
         assertEquals(expected, actual);
     }
 
-
     @Test
-    public void testCountEvenElementDownTheMainDiagonal() {
-        int expected = 2;
+    public void testCountEvenElementDownTheMainDiagonalByNullMatrix() {
+        int expected = -1;
 
         int actual = MatrixLogic.getCountEvenElementDownTheMainDiagonal(matrix);
 
         assertEquals(expected, actual);
     }
 
-
     @Test
-    public void testCountEvenElementUpTheSideDiagonal() {
-        int expected = 2;
+    public void testCountEvenElementUpTheSideDiagonalByNullMatrix() {
+        int expected = -1;
 
         int actual = MatrixLogic.getCountEvenElementUpTheSideDiagonal(matrix);
 
         assertEquals(expected, actual);
     }
 
-
     @Test
-    public void testCountEvenElementDownTheSideDiagonal() {
-        int expected = 2;
+    public void testCountEvenElementDownTheSideDiagonalByNullMatrix() {
+        int expected = -1;
 
         int actual = MatrixLogic.getCountEvenElementDownTheSideDiagonal(matrix);
 
         assertEquals(expected, actual);
     }
-
-
 }
